@@ -12,11 +12,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AROAPP"
-        tools:targetApi="31">
+        tools:targetApi="33">
         <activity
-            android:name=".MainActivity"
+            android:name=".ui.main.MainActivity"
             android:exported="true"
-            android:label="@string/app_name"
             android:theme="@style/Theme.AROAPP">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -28,6 +27,8 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
+
+        <activity android:name=".ui.auth.AuthActivity" />
     </application>
 
 </manifest>
